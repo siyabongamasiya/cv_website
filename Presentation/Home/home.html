@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="eng-ZA">
+    <head>
+        <title>Siyabonga Khanyile CV</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                background: linear-gradient( to bottom, 
+                #121212 20%, 
+                #2D9CDB 60%, 
+                #388856 100% 
+            );
+            padding: 16px;
+            height: 100vh;
+            margin: 0;
+            scroll-behavior: smooth;
+            }
+
+            #navigation > p{
+                font-size: 22px;
+                font-weight: 400; 
+                line-height: 28px;
+                letter-spacing: 0px;
+                cursor: pointer;
+                font-family: "Roboto", sans-serif;
+                color: #FFFFFF; 
+            }
+
+        #details {
+            margin-top: 180px;
+        }
+
+        #navigation {
+            display: flex;
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navigation p.active {
+            color: #2D9CDB; 
+            font-weight: bold;
+        }
+
+        #topArea {
+            background-color: #121212;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 5px;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        #round-image {
+            border-radius: 50%;
+            object-fit: cover; 
+            border: 3px solid #fff; /
+        }
+
+        #MainTitle {
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 52px;
+            letter-spacing: 0px;
+            font-family: 'Roboto', sans-serif; 
+            color: #D9D9D9; 
+            margin: 0; 
+        }
+
+        .ItemSection {
+            background-color: #1DB954; 
+            border-radius: 16px;
+            padding: 16px; 
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+            gap: 8px; 
+        }
+
+
+
+    /* Style for the item title */
+    h2.Item.title {
+        font-size: 22px; 
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        font-weight: bold;
+        font-family: "Roboto", serif;
+        color: #000000; 
+    }
+
+    /* Style for the item body */
+    pre.Item.body {
+        font-size: 16px; 
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        font-family: "Roboto", sans-serif;
+        color: #FFFFFF; 
+    }
+
+    a:nth-child(1) p {
+        background-color: #2D9CDB; 
+        color: white; 
+        border-radius: 8px; 
+        width: 30px; 
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px; 
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        font-family: "Roboto", sans-serif;
+    }
+
+/* Style for the second <p> inside <a> */
+    a:nth-child(2) p {
+        background-color: #D9D9D9; 
+        color: black; 
+        border-radius: 8px; 
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px; 
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    
+
+/* Footer section */
+    #contacts {
+        background-color: #2A2A2A;
+        padding: 16px;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+    }
+
+/* Style for the "Contacts" <p> */
+    #contacts p:first-child {
+        color: #D9D9D9;
+        font-size: 24px; 
+        font-weight: 500;
+        text-align: center; 
+        margin-bottom: 32px;
+    }
+
+
+/* Style for the rest of the <p> elements */
+    #contacts p:not(:first-child) {
+        color: #FFFFFF; 
+        font-size: 16px; 
+        font-weight: 400;
+        text-align: left;
+        margin: 4px 0;
+    }
+
+    
+    
+
+        </style>
+    </head>
+    <body>
+        <!-- header-->
+         <section id="topArea">
+            <header 
+            style="display: flex;
+        width: 100%;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        align-items: center;">
+            <img 
+            id="round-image"
+            src="../../Assets/logo.jpg" 
+            alt="No image" 
+            width="40vw" 
+            height="40vh">
+
+            <h1 id="MainTitle">Siyabonga Khanyile CV</h1>
+            <p>            </p>
+        </header>
+
+        <!-- navigation-->
+        <section 
+        id="navigation">
+            <p data-target="about">About</p>
+            <p data-target="education">Education</p>
+            <p data-target="projects">Projects</p>
+            <p data-target="skills">Skills</p>
+            <p data-target="contacts">Contacts</p>
+        </section>
+         </section>
+        
+
+        
+        
+
+        <!--main body-->
+    
+        <section id="details">
+            <section id="about" class="ItemSection">
+                <h2 class="Item title">About</h2>
+                <pre class="Item body">
+Enthusiastic Android developer with a understanding of<strong> Android app development</strong>, including <strong>Kotlin and the Android SDK</strong> .
+I also have a foundational experience in <strong>, Html and CSS and javascript</strong>.
+Passionate about building products that actually have an impact to people's lives. 
+Eager to contribute and learn from a team that values team work and continual learning.</pre>
+            </section>
+
+            <section id="education" class="ItemSection">
+                <h2 class="Item title">Education</2>
+                <pre class="Item body">
+                    <span style="text-decoration-line: underline;
+                    font-weight: bold;">University</span>
+                    ● University of Kwazulu-Natal (Westville)
+                    ○ Degree: Bachelor of Commerce (Economics and Finance)
+                    ○ Year of Graduation: 2018
+
+                    <span style="text-decoration-line: underline;
+                    font-weight: bold;">High School</span>
+                    ● Nsikayendlu High School
+                    ○ Year of Graduation: 2013
+                    ○ Subjects and Results:
+                    ■ English: Level 6
+                    ■ Zulu: Level 6
+                    ■ Mathematics: Level 5
+                    ■ Business Studies: Level 7
+                    ■ Accounting: Level 5
+                    ■ Physical Sciences: Level 3
+                    ■ Life Sciences: Level 5
+                    ■ Life Orientation: Level 7</pre>
+            </section>
+
+            <section id="projects" class="ItemSection">
+                <h2 class="Item title">Projects</h2>
+                <pre class="Item body">
+                    <strong>1.Archives</strong>
+
+                    Description: This app was created to help users view their media files and be able to archive their images in the firebase storage.
+                    
+                    Tech stack: 
+                    Firebase (Storage),
+                    Dagger hilt,
+                    JetPack Compose,
+                    Exoplayer,
+                    glide
+                    GitHub:<a href="https://github.com/siyabongamasiya/Archives"> https://github.com/siyabongamasiya/Archives </a>
+                    
+                    
+                    <strong>2.Culo</strong>
+                    Description: This App was created to allow users to play their favourite songs and create playlist.
+                    
+                    Tech stack:
+                    JetPack Compose,
+                    Exoplayer,
+                    Admob,
+                    Dagger hilt,
+                    Room,
+                    Glide
+                    GitHub: <a href="https://github.com/siyabongamasiya/Culo"> https://github.com/siyabongamasiya/Culo </a>
+                    
+                    
+                    <strong>3.Groceries</strong> 
+                    Description: This App was Created to allow Users to make grocery lists and see how much they will spend on their next grocery list.
+                    
+                    Tech stack:
+                    JetPack Compose,
+                    Dagger hilt,
+                    Room(Many-to-Many Relationship),
+                    Admob
+                    GitHub: <a href="https://github.com/siyabongamasiya/Grosa"> https://github.com/siyabongamasiya/Grosa </a>
+                    
+                    
+                    <strong>4.Movies</strong>
+                    Description :This app was created to help users search for movies and watch their trailers on YouTube.
+                    
+                    Tech stack:
+                    JetPack Compose,
+                    Retrofit,
+                    Glide(Image loading),
+                    Dagger hilt
+                    GitHub: <a href="https://github.com/siyabongamasiya/Movies"> https://github.com/siyabongamasiya/Movies </a>
+                    
+                    
+                    <strong>5.Photo-Taker</strong>
+                    Description :This project allows users to take photos and have the option to save or share them.
+                    
+                    Tech stack:
+                    XML and ViewBinding,
+                    Room,
+                    Glide
+                    GitHub: <a href="https://github.com/siyabongamasiya/Photo-Taker"> https://github.com/siyabongamasiya/Photo-Taker </a>
+                    
+                    
+                    <strong>6.Little-Lemon</strong>
+                    Description :This app was created to help users make orders for the little-lemon restaurant.
+                    It is an app from my course(Meta-Android certificate).
+                    
+                    Tech stack: 
+                    JetPack Compose,
+                    Ktor(For API communication),
+                    Room,
+                    Glide
+                    GitHub:<a href="https://github.com/siyabongamasiya/little_lemon"> https://github.com/siyabongamasiya/little_lemon</a>
+                    
+    
+                    <strong>7.Menly-Wear</strong>
+                    Description :Menly Wear is a feature-rich Android e-commerce application designed for shopping men’s clothing and accessories. 
+                    It allows users to browse products, add items to their Basket, and place orders securely.
+                    
+                    Tech stack: 
+                    JetPack Compose,
+                    Retrofit(For API communication),
+                    Room,
+                    Firebase Authentication,
+                    Dagger-Hilt,
+                    Work-Manager,
+                    Glide
+                    GitHub: <a href="https://github.com/siyabongamasiya/manly-wear">https://github.com/siyabongamasiya/manly-wear</a></pre>
+            </section>
+
+            <section id="skills" class="ItemSection">
+                <h2 class="Item title">Skills</h2>
+                <pre class="Item body">
+                    Programming Languages: Kotlin
+                    Frameworks & Libraries: Android SDK, Jetpack Components, Retrofit, Room Database ,Dagger hilt
+                    Development Tools: Android Studio, Git
+                    APIs & Integrations: RESTful APIs, JSON , Admob(Advertising)
+                    Version Control: Git, GitHub
+                    Other Skills: UI Design(Figma) <a href="https://github.com/siyabongamasiya/Designs"> https://github.com/siyabongamasiya/Designs </a>,
+                    XML,
+                    Uploading Libray using JitPack.io(Basics), 
+                    Publishing app to Playstore (Old Account),
+                    Testing (JetPack Compose, Mocking, ROOM ,Unit),
+                    experience working with Kotlin Flows and coroutines.</pre>
+            </section>
+
+            <section 
+            style="display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;">
+                <section 
+                style="display: flex;
+                width: 5vw;
+                align-items: center;
+                justify-content: space-between;">
+                    <a >
+                        <p>1</p>
+                    </a>
+                    <a href="/Presentation/Qualifications/qualifications.html" target="_self">
+                        <p>2</p>
+                    </a>
+                </section>
+            </section>
+
+            <!-- footer-->
+            <section id="contacts">
+                <p>Contacts</p>
+                <p>Phone Number : 067 698 4906</p>
+                <p>Email : siyabongakhanyile76@gmail.com</p>
+                <p>Facebook : masiya khanyile</p>
+            </section>
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                
+
+                const navItems = document.querySelectorAll("#navigation p");
+                const sections = document.querySelectorAll("#details > section");
+    
+                // Function to remove 'active' class from all nav items
+                const removeActiveClasses = () => {
+                    navItems.forEach(item => item.classList.remove("active"));
+                };
+
+                //start as about 
+                removeActiveClasses()
+                document.querySelector(`#navigation p[data-target='about']`).classList.add("active");
+    
+                // Scroll event listener
+                window.addEventListener("scroll", () => {
+                    let scrollPosition = window.scrollY;
+                    const scrollPosition2 = window.scrollY + window.innerHeight;
+                    const pageHeight = document.documentElement.scrollHeight;
+
+    
+    
+                    sections.forEach(section => {
+                        let sectionTop = section.offsetTop - 130; 
+                        let sectionHeight = section.clientHeight;
+    
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                            removeActiveClasses();
+                            document.querySelector(`#navigation p[data-target='${section.id}']`).classList.add("active");
+                        }
+
+
+                        if (scrollPosition2 >= pageHeight) {
+                            removeActiveClasses()
+                            document.querySelector(`#navigation p[data-target='contacts']`).classList.add("active");
+                        }
+                    });
+                });
+    
+                // Click event listener for smooth scrolling
+                navItems.forEach(item => {
+                    item.addEventListener("click", () => {
+                        let targetSection = document.getElementById(item.getAttribute("data-target"));
+                        if (targetSection) {
+                            window.scrollTo({
+                                top: targetSection.offsetTop - 130, 
+                                behavior: "smooth"
+                            });
+    
+                            removeActiveClasses();
+                            item.classList.add("active");
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
